@@ -1,7 +1,5 @@
 <?php
 
-die('carreg');
-
 // MOSTRA OS ERROS
 ini_set('display_errors', true);
 

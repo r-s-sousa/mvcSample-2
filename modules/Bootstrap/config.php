@@ -12,7 +12,7 @@ $dotenv = new Dotenv();
 /**
  * Load ENV FILE
  */
-$dotenv->load(dirname(__DIR__) . '/modules/Base/Envs/.env.dev');
+$dotenv->load(dirname(__DIR__) . '/Base/Envs/.env');
 
 /**
  * Configuração do banco de dadoss
