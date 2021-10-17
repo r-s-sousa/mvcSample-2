@@ -18,14 +18,8 @@ $router = new Router(URL);
 // DEFINE O NAMESPACE BASE DOS CONTROLADORES
 $router->namespace("Modules\Base\Controllers");
 
-// BASE PAGE
-require_once dirname(__DIR__)."/modules/Base/Routes/web_routes.php";
-
-// BASE ERRORS
-require_once dirname(__DIR__)."/modules/Base/Routes/error_routes.php";
-
-// USER CONTROLLER
-require_once dirname(__DIR__)."/modules/User/Routes/user_routes.php";
+// TODAS AS ROTAS
+require_once dirname(__DIR__)."/modules/Bootstrap/router_includes.php";
 
 // EXECUTA AS ROTAS
 $router->dispatch();
