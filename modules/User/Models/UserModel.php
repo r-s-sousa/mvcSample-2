@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Militar\Models;
+namespace Modules\User\Models;
 
 use CoffeeCode\DataLayer\DataLayer;
 
