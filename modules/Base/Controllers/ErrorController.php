@@ -2,6 +2,8 @@
 
 namespace Modules\Base\Controllers;
 
+use CoffeeCode\Router\Router;
+
 /**
  * Controlador de errors
  */
@@ -15,6 +17,7 @@ class ErrorController extends Controller
    public function __construct($router)
    {
       parent::__construct($router);
+      parent::setViewFolder(dirname(__DIR__)."/Views");
    }
 
    /**

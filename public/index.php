@@ -19,10 +19,13 @@ $router = new Router(URL);
 $router->namespace("Modules\Base\Controllers");
 
 // BASE PAGE
-require_once __DIR__ . "/../modules/Base/Routes/web_routes.php";
+require_once dirname(__DIR__)."/modules/Base/Routes/web_routes.php";
 
-// ERRORS
-require_once __DIR__ . "/../modules/Base/Routes/error_routes.php";
+// BASE ERRORS
+require_once dirname(__DIR__)."/modules/Base/Routes/error_routes.php";
+
+// USER CONTROLLER
+require_once dirname(__DIR__)."/modules/User/Routes/user_routes.php";
 
 // EXECUTA AS ROTAS
 $router->dispatch();
